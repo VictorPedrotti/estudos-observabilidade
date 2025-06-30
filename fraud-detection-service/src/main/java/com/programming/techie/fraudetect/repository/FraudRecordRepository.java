@@ -5,6 +5,9 @@ import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import io.micrometer.observation.annotation.Observed;
+
+@Observed
 @Repository
 @RequiredArgsConstructor
 public class FraudRecordRepository {
